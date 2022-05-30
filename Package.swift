@@ -17,12 +17,15 @@ let package = Package(
         .binaryTarget(
             name: "YandexMapsMobile",
             url: "https://github.com/evssar/YandexMapsMobileBinary/releases/download/4.1.0/YandexMapsMobile.xcframework.zip",
-            checksum: "b6593b4f27ab358da3f3d5d3354d8ab2f27171db2e62afcb27302ede6473a251"
+            checksum: "c68c29a3b1ad79b3908684df2134722eec71459e650efc8b5f0ea75ee7458484"
         ),
         .target(
             name: "YandexMapsMobileBinary",
             dependencies: [
                 "YandexMapsMobile"
+            ],
+            resources: [
+                .process("Resources/YandexMapsMobile.bundle"),
             ],
             linkerSettings: [
                 .linkedFramework("Foundation"),
