@@ -1,3 +1,5 @@
 # YandexMapsMobileBinary
 
-A description of this package.
+## Instalation
+
+To install use [YandexMapsMobileWrapper](https://github.com/evssar/YandexMapsMobileWrapper).
